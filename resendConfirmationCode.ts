@@ -1,25 +1,26 @@
 require("dotenv").config();
 
 const AWS = require("./aws");
+
 // create a new instance of the Cognito Identity service
 const cognitoIdentityServiceProvider = new AWS.CognitoIdentityServiceProvider();
 
-// sign up a new user
-const signUp = async (password, email) => {
+// function to confirm a new user
+const resendConfirmationCode = async (username) => {
   const params = {
     ClientId: process.env.AWS_CLIENT_ID,
-    Password: password,
-    Username: email,
-    UserAttributes: [{ Name: "email", Value: email }],
+    Username: username,
   };
 
   try {
-    const data = await cognitoIdentityServiceProvider.signUp(params).promise();
+    const data = await cognitoIdentityServiceProvider
+      .resendConfirmationCode(params)
+      .promise();
     console.log(data);
   } catch (err) {
     console.error(err);
   }
 };
 
-// call the signUp function
-signUp("Password#1", "tester1@yopmail.com");
+// call the resendConfirmationCode function
+resendConfirmationCode("tester2@yopmail.com");

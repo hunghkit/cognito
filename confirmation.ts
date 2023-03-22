@@ -22,4 +22,4 @@ const confirmUser = async (username, confirmationCode) => {
 };
 
 // call the confirmUser function
-confirmUser("tester2@yopmail.com", "156575");
+confirmUser("tester3@yopmail.com", "176995");

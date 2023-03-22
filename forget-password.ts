@@ -23,4 +23,4 @@ const forgotPassword = async (username) => {
 };
 
 // call the forgotPassword function
-forgotPassword("tester1@yopmail.com");
+forgotPassword("htester3@yopmail.com");

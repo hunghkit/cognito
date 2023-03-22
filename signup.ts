@@ -22,4 +22,4 @@ const signUp = async (password, email) => {
 };
 
 // call the signUp function
-signUp("Password#1", "tester1@yopmail.com");
+signUp("Password#1", "htester2@yopmail.com");

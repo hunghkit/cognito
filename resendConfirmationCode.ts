@@ -23,4 +23,4 @@ const resendConfirmationCode = async (username) => {
 };
 
 // call the resendConfirmationCode function
-resendConfirmationCode("tester2@yopmail.com");
+resendConfirmationCode("htester3@yopmail.com");

@@ -11,9 +11,12 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^18.13.0",
+    "@types/nodemailer": "^6.4.7",
     "dotenv": "^16.0.3"
   },
   "dependencies": {
-    "aws-sdk": "^2.1313.0"
+    "aws-sdk": "^2.1313.0",
+    "handlebars": "^4.7.7",
+    "nodemailer": "^6.9.1"
   }
 }

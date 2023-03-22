@@ -25,4 +25,4 @@ const logIn = async (username, password) => {
 };
 
 // call the logIn function
-logIn("tester1@yopmail.com", "Password#1");
+logIn("tester6@yopmail.com", "Password#1");
